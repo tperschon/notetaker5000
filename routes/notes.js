@@ -1,6 +1,7 @@
 const notes = require('express').Router();
 const path = require('path');
 const fs = require('fs');
+const { v4: uuid } = require('uuid');
 
 notes.get('/notes', (req, res) => {
     res.sendFile(path.join(__dirname, '../db/notes.json'))
@@ -12,7 +13,8 @@ notes.post('/notes', (req, res) => {
             let notesJson = require('../db/notes.json');
             let newNote = {
                 title: req.body.title,
-                text: req.body.text
+                text: req.body.text,
+                id: uuid()
             };
             notesJson.push(newNote);
             fs.writeFileSync(path.join(__dirname, '../db/notes.json'), JSON.stringify(notesJson, null, 4));
@@ -26,7 +28,7 @@ notes.post('/notes', (req, res) => {
 });
 
 notes.delete('/notes/:id', (req, res) => {
-
+    console.log(req)
 });
 
 module.exports = notes;
