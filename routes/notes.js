@@ -48,6 +48,7 @@ notes.post('/notes', (req, res) => {
     else res.send('POST request must contain body.');
 });
 
+// handle DELETE requests to /notes which contain an ID parameter
 notes.delete('/notes/:id', (req, res) => {
     // read the notes.json file
     fs.readFile(path, 'utf8', (err, data) => {
