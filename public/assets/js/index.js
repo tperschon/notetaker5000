@@ -51,7 +51,6 @@ const deleteNote = (id) =>
   });
 
 const renderActiveNote = () => {
-  console.log(activeNote);
   hide(saveNoteBtn);
 
   if (activeNote.id) {
