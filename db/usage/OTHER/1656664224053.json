@@ -1,0 +1,15 @@
+{
+    "method": "PATCH",
+    "path": "/api/db/consolidation/hasdf",
+    "headers": {
+        "host": "localhost:3001",
+        "user-agent": "insomnia/2022.4.2",
+        "content-type": "application/json",
+        "accept": "*/*",
+        "content-length": "21"
+    },
+    "body": {
+        "auth": "testing"
+    },
+    "time": "2022-07-01T08:30:24.053Z"
+}

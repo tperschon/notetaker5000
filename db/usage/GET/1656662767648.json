@@ -1,5 +1,6 @@
 {
     "method": "GET",
+    "path": "/assets/css/styles.css",
     "headers": {
         "host": "localhost:3001",
         "connection": "keep-alive",
@@ -7,17 +8,16 @@
         "sec-ch-ua-mobile": "?0",
         "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36",
         "sec-ch-ua-platform": "\"Windows\"",
-        "content-type": "application/json",
-        "accept": "*/*",
+        "accept": "text/css,*/*;q=0.1",
         "sec-fetch-site": "same-origin",
-        "sec-fetch-mode": "cors",
-        "sec-fetch-dest": "empty",
+        "sec-fetch-mode": "no-cors",
+        "sec-fetch-dest": "style",
         "referer": "http://localhost:3001/notes",
         "accept-encoding": "gzip, deflate, br",
         "accept-language": "en-US,en;q=0.9",
-        "if-none-match": "W/\"2-181b7e67bb2\"",
-        "if-modified-since": "Fri, 01 Jul 2022 03:55:44 GMT"
+        "if-none-match": "W/\"463-181ace1e3b4\"",
+        "if-modified-since": "Wed, 29 Jun 2022 00:34:54 GMT"
     },
-    "body": null,
-    "time": "2022-07-01T07:47:48.429Z"
+    "body": {},
+    "time": "2022-07-01T08:06:07.648Z"
 }

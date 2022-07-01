@@ -1,23 +1,23 @@
 {
     "method": "GET",
+    "path": "/assets/js/index.js",
     "headers": {
         "host": "localhost:3001",
         "connection": "keep-alive",
         "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"102\", \"Google Chrome\";v=\"102\"",
+        "if-none-match": "W/\"116a-181b2e02fff\"",
+        "if-modified-since": "Thu, 30 Jun 2022 04:30:45 GMT",
         "sec-ch-ua-mobile": "?0",
         "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36",
         "sec-ch-ua-platform": "\"Windows\"",
-        "content-type": "application/json",
         "accept": "*/*",
         "sec-fetch-site": "same-origin",
-        "sec-fetch-mode": "cors",
-        "sec-fetch-dest": "empty",
+        "sec-fetch-mode": "no-cors",
+        "sec-fetch-dest": "script",
         "referer": "http://localhost:3001/notes",
         "accept-encoding": "gzip, deflate, br",
-        "accept-language": "en-US,en;q=0.9",
-        "if-none-match": "W/\"2-181b7e67bb2\"",
-        "if-modified-since": "Fri, 01 Jul 2022 03:55:44 GMT"
+        "accept-language": "en-US,en;q=0.9"
     },
-    "body": null,
-    "time": "2022-07-01T07:47:48.429Z"
+    "body": {},
+    "time": "2022-07-01T08:06:07.649Z"
 }
