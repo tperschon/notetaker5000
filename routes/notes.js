@@ -30,7 +30,7 @@ notes.post('/notes', (req, res) => {
         else {
             if (req.body.title) res.send('Body must have text.');
             if (req.body.text) res.send('Body must have title.');
-        }
+        };
     }
     // since no body, give them back a message saying they need a body
     else res.send('POST request must contain body.');

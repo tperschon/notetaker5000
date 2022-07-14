@@ -1,11 +1,11 @@
 const path = require('path');
 const createJson = require('../utils/createJson.js');
-const consolidateToJson = require('../utils/consolidateToJson');
 
+// function to log traffic and write it to folder/files based on request method
 function logTraffic(req, res, next) {
-    console.log(`Received ${req.method} request.`)
+    // get the request method
     const method = req.method;
-    if(method === 'POST') console.log(req.body)
+    // create an object with some request data and a timestamp
     const reqObj = {
         method: method,
         path: req.path,
@@ -13,6 +13,7 @@ function logTraffic(req, res, next) {
         body: req.body ? req.body : null,
         time: new Date()
     };
+    // cascading switch to write files to appropriate folders
     switch(method) {
         case 'GET':
         case 'POST':
@@ -21,16 +22,14 @@ function logTraffic(req, res, next) {
             console.log(`Writing traffic data to ${path.join(__dirname, `../db/usage/${method}.json`)}.`)
             break;
         }
+        // default case to write any non-explicitly handled request types to an other folder
         default: {
-            createJson(path.join(__dirname, `../db/usage/other/${Date.now()}.json`), reqObj);
+            createJson(path.join(__dirname, `../db/usage/OTHER/${Date.now()}.json`), reqObj);
             console.log(`Writing traffic data to ${path.join(__dirname, `../db/usage/other.json`)}.`)
         }
     }
+    // pass the request on
     next();
 };
-
-function consolidateTraffic(method) {
-
-}
 
 module.exports = logTraffic;
