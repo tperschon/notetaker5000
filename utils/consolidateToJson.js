@@ -26,7 +26,7 @@ async function consolidateToJson(origin, destination = 'consolidated') {
     // If there are any objects in the array,
     if (objs.length) {
         // write the objs array to a file
-        fs.writeFile(`${origin}/${destination}/${Date.now()}.json`, JSON.stringify(...objs, null, 4), err => {
+        fs.writeFile(`${origin}/${destination}/${Date.now()}.json`, JSON.stringify(objs, null, 4), err => {
             // if there was an error writing, log the error.
             if (err) console.error(`Error writing to /${destination}/${Date.now()}.json`, err);
         });
