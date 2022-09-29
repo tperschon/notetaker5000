@@ -32,6 +32,8 @@ To start the application, run the command 'npm start'
 Test the application's ability using your browser, navigating to localhost:3001
 Enter a note with a title and content, a save button will light up on the right
 Click the save button to ensure the note is saved over on the left
+Each note on the left can be clicked to pull up and view it
+There is a trash icon for each note, this deletes the note. FOREVER. Be careful.
 ```
 # Contributing
 If you would like to contribute to the project, it can be found here: [notetaker5000](https://github.com/tperschon/notetaker5000)
